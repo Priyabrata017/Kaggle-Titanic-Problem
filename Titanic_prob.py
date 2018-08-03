@@ -6,7 +6,7 @@ import seaborn as sn
 train = pd.read_csv('train.csv')
 test=pd.read_csv('test.csv')
 
-#Placing the mean values of ages i the missing rows
+#Placing the mean values of ages in the missing rows
 avg_age = np.mean(train["Age"])
 train["Age"].fillna(avg_age, inplace = True)
 
